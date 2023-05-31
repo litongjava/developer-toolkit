@@ -17,6 +17,19 @@ const toolkit = {
       // 将匹配到的大写字母替换成下划线加小写字母
       return "_" + letter.toLowerCase();
     });
+  },
+  generateSQL(sql, template) {
+    template = JSON.parse(template);
+    const placeholders = sql.split('?');
+    if (placeholders.length - 1 !== template.length) {
+      throw new Error('Invalid template');
+    }
+
+    let generatedSQL = placeholders[0];
+    for (let i = 0; i < template.length; i++) {
+      generatedSQL += template[i] + placeholders[i + 1];
+    }
+    return generatedSQL;
   }
 }
 

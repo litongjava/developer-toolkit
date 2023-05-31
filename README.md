@@ -21,3 +21,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ## Example
 under line to came  
 ![](README_files/1.jpg)
+
+根据模板和参数生成SQL
+![](README_files/2.jpg)
