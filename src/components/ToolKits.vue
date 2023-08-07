@@ -10,6 +10,7 @@
       </el-button>
       <el-button type="primary" @click="output=toolkit.generateSQL(input,param1)">根据模板和参数生成SQL
       </el-button>
+      <el-button type="primary" @click="output=toolkit.generateUUID()">生成UUID</el-button>
     </el-row>
   </div>
 
