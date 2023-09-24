@@ -2,15 +2,17 @@
 <div class="app-container">
   <div>
     <el-row>
-      <el-button type="primary" @click="output = toolkit.stringMargeToOnLine(input)">合并内容为一行
+      <el-button type="primary" @click="output = toolkit.stringMargeToOnLine(input)">merge content into one line
       </el-button>
-      <el-button type="primary" @click="output=toolkit.underLineToCame(input)">下划线转驼峰
+      <el-button type="primary" @click="output=toolkit.underLineToCame(input)">underline to camel
       </el-button>
-      <el-button type="primary" @click="output=toolkit.cameToUnderline(input)">驼峰转下划线
+      <el-button type="primary" @click="output=toolkit.cameToUnderline(input)">camel to underline
       </el-button>
-      <el-button type="primary" @click="output=toolkit.generateSQL(input,param1)">根据模板和参数生成SQL
+      <el-button type="primary" @click="output=toolkit.generateSQL(input,param1)">Generate SQL based on templates and parameters
       </el-button>
-      <el-button type="primary" @click="output=toolkit.generateUUID()">生成UUID</el-button>
+      <el-button type="primary" @click="output=toolkit.generateUUID()">generate UUID</el-button>
+      <el-button type="primary" @click="output=toolkit.urlEncode(input)">URL Encode</el-button>
+      <el-button type="primary" @click="output=toolkit.urlDecode(input)">URL Decode</el-button>
     </el-row>
   </div>
 
