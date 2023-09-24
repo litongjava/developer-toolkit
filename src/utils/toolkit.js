@@ -41,9 +41,23 @@ const toolkit = {
   },
   urlDecode(input) {
     return decodeURIComponent(input);
+  },
+
+  //git 地址转为http地址
+  gitToHttp(input) {
+    if (input.startsWith("git@")) {
+      return "https://" + input.slice(4).replace(":", "/");
+    }
+    return input;
+  },
+
+  httpToGit(input) {
+    if (input.startsWith("https://")) {
+      return "git@" + input.slice(8).replace("/", ":");
+    }
+    return input;
   }
-
-
 };
+
 
 export default toolkit;
