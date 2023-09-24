@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "package": "cd src-tauri && cargo tauri build"
   },
   "dependencies": {
     "core-js": "^3.8.3",
