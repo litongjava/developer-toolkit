@@ -36,7 +36,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: developer-toolkit-${{ runner.os }}-${{ runner.arch }}
-          path: target/release/bundle/dmg/developer-toolkit_0.1.0_x64.dmg
+          path: src-tauri/target/release/bundle/dmg/developer-toolkit_0.1.0_x64.dmg
 
   build_macos_m2:
     runs-on: macos-latest
@@ -66,7 +66,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: developer-toolkit-${{ runner.os }}-aarch64
-          path: target/aarch64-apple-darwin/release/bundle/dmg/developer-toolkit_0.1.0_aarch64.dmg
+          path: src-tauri/target/aarch64-apple-darwin/release/bundle/dmg/developer-toolkit_0.1.0_aarch64.dmg
 
   build_ubuntu:
     runs-on: ubuntu-latest
@@ -108,7 +108,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: developer-toolkit-${{ runner.os }}-${{ runner.arch }}-appimage
-          path: target/release/bundle/appimage/developer-toolkit_0.1.0_amd64.AppImage
+          path: src-tauri/target/release/bundle/appimage/developer-toolkit_0.1.0_amd64.AppImage
 
   build_windows:
     runs-on: windows-latest
@@ -138,4 +138,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: developer-toolkit-${{ runner.os }}-${{ runner.arch }}
-          path: target/release/bundle/msi/developer-toolkit_0.1.0_x64_en-US.msi
+          path: src-tauri/target/release/bundle/msi/developer-toolkit_0.1.0_x64_en-US.msi
