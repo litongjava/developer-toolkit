@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "package": "cd src-tauri && cargo tauri build"
@@ -10,6 +11,8 @@
   "dependencies": {
     "core-js": "^3.8.3",
     "element-ui": "^2.4.5",
+    "katex": "^0.11.1",
+    "marked": "^0.7.0",
     "register-service-worker": "^1.7.2",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1"
@@ -19,8 +22,7 @@
     "@vue/cli-plugin-pwa": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "node-sass": "^4.9.2",
-    "sass-loader": "^7.0.3",
+    "babel-plugin-component": "^1.1.1",
     "vue-cli-plugin-element": "~1.0.1",
     "vue-template-compiler": "^2.6.14"
   },

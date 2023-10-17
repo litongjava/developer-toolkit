@@ -1,6 +1,7 @@
 # developer-toolkit
 ## Build
 ### Project setup
+The version of nodejs is v16.17.0
 ```
 npm install
 ```

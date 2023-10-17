@@ -1,15 +1,15 @@
 <template>
-  <ToolKits />
+  <MarkdownLatexPreview />
 </template>
 
 <script>
 // @ is an alias to /src
-import ToolKits from "@/components/ToolKits.vue";
+import MarkdownLatexPreview from "@/components/MarkdownLatexPreview.vue";
 
 export default {
   name: "HomeView",
   components: {
-    ToolKits,
+    MarkdownLatexPreview,
   },
 };
 </script>
