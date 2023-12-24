@@ -20,6 +20,16 @@ const routes = [
     name: "markdown",
     component: () => import("../views/Markdown.vue"),
   },
+  {
+    path: "/jsonFormat",
+    name: "jsonFormat",
+    component: () => import("../views/JsonFormat.vue"),
+  },
+  {
+    path: "/jsonCompare",
+    name: "jsonCompare",
+    component: () => import("../views/JsonCompare.vue"),
+  },
 ];
 
 const router = new VueRouter({

@@ -3,6 +3,8 @@
     <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
       <el-menu-item index="/"><i class="el-icon-s-home"></i>Home</el-menu-item>
       <el-menu-item index="/markdown"><i class="el-icon-s-order"></i> Markdown</el-menu-item>
+      <el-menu-item index="/jsonFormat"><i class="el-icon-s-order"></i>Json Format</el-menu-item>
+      <el-menu-item index="/jsonCompare"><i class="el-icon-s-order"></i>Json Compare</el-menu-item>
       <el-menu-item index="/about"><i class="el-icon-s-shop"></i>About</el-menu-item>
     </el-menu>
   </div>
