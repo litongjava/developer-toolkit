@@ -15,6 +15,7 @@
         <el-button type="primary" @click="output = toolkit.urlDecode(input)">URL Decode</el-button>
         <el-button type="primary" @click="output = toolkit.gitToHttp(input)">git to http</el-button>
         <el-button type="primary" @click="output = toolkit.httpToGit(input)">http to git</el-button>
+        <el-button type="primary" @click="output = toolkit.unicodeToChar(input)">Unicode to Char</el-button>
       </el-row>
     </div>
 

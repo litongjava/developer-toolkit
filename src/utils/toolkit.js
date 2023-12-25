@@ -56,6 +56,11 @@ const toolkit = {
       return "git@" + input.slice(8).replace("/", ":");
     }
     return input;
+  },
+  unicodeToChar(input){
+    return input.replace(/\\u[\dA-F]{4}/gi, function (match) {
+      return String.fromCharCode(parseInt(match.replace(/\\u/g, ''), 16));
+    });
   }
 };
 

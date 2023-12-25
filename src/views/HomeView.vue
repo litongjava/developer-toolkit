@@ -4,7 +4,7 @@
 
 <script>
 // @ is an alias to /src
-import ToolKits from "@/components/ToolKits.vue";
+import ToolKits from "../components/ToolKits.vue";
 
 export default {
   name: "HomeView",
